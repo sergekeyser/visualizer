@@ -1,0 +1,43 @@
+{
+	"endpoint": "/account",
+	"confluence":"https://idmobile.atlassian.net/wiki/spaces/IDV2/pages/548012047",
+	"methods": [
+				{
+					"method": "GET",
+					"connectsTo":
+						[
+							{
+								"apiVersion":"v1",
+								"apiName": "customer",
+								"uri": "/customers/{customerid}",
+								"method": "GET"
+							}
+						]
+				},
+				{
+					"method": "POST",
+					"connectsTo":
+						[
+							{
+								"apiVersion":"v1",
+								"apiName": "customer",
+								"uri": "/customers",
+								"method": "POST"
+							}
+						]
+				},
+				{
+					"method": "DELETE",
+					"connectsTo":
+						[
+							{
+								"apiVersion":"v1",
+								"apiName": "customer",
+								"uri": "/customers",
+								"method": "POST"
+							}
+						]
+				}
+				
+			]
+}

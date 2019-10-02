@@ -1,0 +1,18 @@
+{
+	"endpoint": "/customers/{customerid}",
+	"confluence":"https://idmobile.atlassian.net/wiki/spaces/IDV2/pages/548012047",
+	"methods": [
+			{
+				"method": "GET",
+				"connectsTo":
+				[
+					{
+						"apiVersion":"v1",
+						"apiName": "sap",
+						"uri": "/clients/{clientid}",
+						"method": "GET"
+					}
+				]
+			}
+		]
+}

@@ -1,0 +1,15 @@
+{
+	"endpoint": "/campaigns",
+	"confluence":"https://idmobile.atlassian.net/wiki/spaces/IDV2/pages/548012047",
+	"methods": [
+			{
+				"method": "GET"
+			},
+			{
+				"method": "POST"
+			},
+			{
+				"method": "DELETE"
+			}
+		]
+}

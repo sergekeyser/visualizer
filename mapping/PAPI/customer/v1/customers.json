@@ -1,0 +1,34 @@
+{
+	"endpoint": "/customers",
+	"confluence":"https://idmobile.atlassian.net/wiki/spaces/IDV2/pages/548012047",
+	"methods": [
+			{
+				"method": "GET",
+				"connectsTo":
+				[
+					{
+						"apiVersion":"v1",
+						"apiName": "sap",
+						"uri": "/clients",
+						"method": "GET"
+					}
+				],
+				"method": "POST",
+				"connectsTo":
+				[
+					{
+						"apiVersion":"v1",
+						"apiName": "sap",
+						"uri": "/clients",
+						"method": "POST"
+					},
+					{
+						"apiVersion":"v1",
+						"apiName": "leadsdatabase",
+						"uri": "/lead",
+						"method": "POST"
+					}
+				]
+			}
+		]
+}
